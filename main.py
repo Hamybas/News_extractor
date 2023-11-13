@@ -21,7 +21,7 @@ for article in content['articles'][0:20]:
                f"Topic: {article['title']}\n"
                f"Articles: {article['description']}\n"
                f"{article['url']}\n")
-
+# Sending mail
 message = "Subject: Today's news" + '\n' + message
 print(message)
 send_email.send_emails(message.encode('utf-8'))
