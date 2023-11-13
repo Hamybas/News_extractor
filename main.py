@@ -6,7 +6,7 @@ api_key = '1300b2bc92f6422587d9122f0e0a0c2f'
 url = ("https://newsapi.org/v2/everything?"
        f"q={topic}&"
        "sortBy=publishedAt&"
-       "apiKey=1300b2bc92f6422587d9122f0e0a0c2f&"
+       f"apiKey={api_key}"
        "language=en")
 # Make request
 request = requests.get(url)
